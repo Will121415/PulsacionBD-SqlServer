@@ -92,6 +92,7 @@ namespace DAL
             persona.Sexo = (string)dataReader["Sexo"];
             persona.Edad = (int)dataReader["Edad"];
             persona.Pulsacion = (decimal)dataReader["Pulsacion"];
+            dataReader.Close();
             return persona;
         }
         public int Totalizar()
